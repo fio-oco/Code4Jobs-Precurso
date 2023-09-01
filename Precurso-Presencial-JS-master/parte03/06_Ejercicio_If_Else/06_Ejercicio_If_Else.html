@@ -11,7 +11,44 @@
 <body>
     <script>
         // Tu código aquí
+        let respuestaEdad; respuestaEdad = parseInt(prompt("Cuántos años tienes?"));
 
+        if (respuestaEdad >=18) {
+            console.log("Eres mayor de edad.");
+        }
+        
+        else  {
+            console.log("Eres menor");
+        }
+    // Cuando miro la página en el navegador, me pide los dos prompts, pero luego no muestra ningún mensaje, es decir parece que ignora los conditions y print functions y no sé qué falta o qué es lo que he escrito mal.
+
+    let respuestaCorrecta;
+    respuestaCorrecta = 5;
+
+    let intento1; intento1 = prompt("Adivina el numero entre 1 y 10");
+
+        if (intento1 == respuestaCorrecta){
+            console.log("Correcto! Lo has adivinado bien!");
+        }
+        else{
+            console.log("Uups! Adivina otra vez.")
+            let intento2; intento2 = prompt("Adivina el numero entre 1 y 10");
+                if (intento2 == respuestaCorrecta){
+                    console.log("Correcto! Lo has adivinado bien!");
+                }
+                else{
+                    console.log("Uups! Adivina otra vez.");
+                    let intento3; intento3 = prompt("Adivina el numero entre 1 y 10");
+                    if (intento3 == respuestaCorrecta) 
+                        console.log("Correcto! Lo has adivinado bien!")
+                    else{
+                        console.log("No te quedan más intentos. Suerte para la próxima!")
+                    }
+                }
+        } 
+
+    // Creo que la lógica de los if/ else statements podría funcionar pero no puedo comprobar porque el navegador no me mustra nada después del primer prompt. 
+   
     </script>
 </body>
 
